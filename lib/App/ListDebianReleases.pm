@@ -1,7 +1,7 @@
 package App::ListDebianReleases;
 
-our $DATE = '2014-08-16'; # DATE
-our $VERSION = '0.01'; # VERSION
+our $DATE = '2014-08-21'; # DATE
+our $VERSION = '0.02'; # VERSION
 
 use 5.010001;
 use strict;
@@ -28,7 +28,7 @@ sub list_debian_releases {
     my $rel = $dr->releases;
     #use Data::Dump; dd $rel;
     my @res;
-    for (sort {cmp_version($a, $b)} keys $rel) {
+    for (sort {cmp_version($a, $b)} keys %$rel) {
         push @res, $args{detail} ? {version=>$_, code_name=>$rel->{$_}} : $_;
     }
     [200, "OK", \@res];
@@ -49,7 +49,7 @@ App::ListDebianReleases - List Debian releases
 
 =head1 VERSION
 
-This document describes version 0.01 of App::ListDebianReleases (from Perl distribution App-ListDebianReleases), released on 2014-08-16.
+This document describes version 0.02 of App::ListDebianReleases (from Perl distribution App-ListDebianReleases), released on 2014-08-21.
 
 =head1 FUNCTIONS
 

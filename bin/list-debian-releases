@@ -3,8 +3,8 @@
 # Note: This script is a CLI interface to Riap function /App/ListDebianReleases/list_debian_releases
 # and generated automatically using Dist::Zilla::Plugin::Rinci::ScriptFromFunc version 0.01
 
-our $DATE = '2014-08-16'; # DATE
-our $VERSION = '0.01'; # VERSION
+our $DATE = '2014-08-21'; # DATE
+our $VERSION = '0.02'; # VERSION
 
 use 5.010001;
 use strict;
@@ -12,9 +12,7 @@ use warnings;
 
 use Perinci::CmdLine::Any;
 
-Perinci::CmdLine::Any->new(
-    url => "/App/ListDebianReleases/list_debian_releases",
-)->run;
+Perinci::CmdLine::Any->new(url => "/App/ListDebianReleases/list_debian_releases")->run;
 
 # ABSTRACT: List Debian releases
 # PODNAME: list-debian-releases
@@ -31,7 +29,7 @@ list-debian-releases - List Debian releases
 
 =head1 VERSION
 
-This document describes version 0.01 of list-debian-releases (from Perl distribution App-ListDebianReleases), released on 2014-08-16.
+This document describes version 0.02 of list-debian-releases (from Perl distribution App-ListDebianReleases), released on 2014-08-21.
 
 =head1 SYNOPSIS
 

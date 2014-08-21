@@ -2,8 +2,8 @@ NAME
     App::ListDebianReleases - List Debian releases
 
 VERSION
-    This document describes version 0.01 of App::ListDebianReleases (from
-    Perl distribution App-ListDebianReleases), released on 2014-08-16.
+    This document describes version 0.02 of App::ListDebianReleases (from
+    Perl distribution App-ListDebianReleases), released on 2014-08-21.
 
 FUNCTIONS
   list_debian_releases(%args) -> [status, msg, result, meta]
