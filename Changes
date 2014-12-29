@@ -1,5 +1,12 @@
 Revision history for App-ListDebianReleases
 
+0.03    2014-12-29 (PERLANCAR)
+
+	- No functional changes.
+
+	- Prefer pericmd-lite for CLI.
+
+
 0.02    2014-08-21 (SHARYANTO)
 
         - No functional changes.
